@@ -1,0 +1,105 @@
+.headerContacts {
+    z-index: 1;
+    // margin: 0 0 0 auto;
+    z-index: 50;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    // padding: 23px;
+    // padding-top: ;
+    padding: 0 157/1920*100vw 0 296/1920*100vw;
+    font-family: Rubick, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    @media(max-width: $width_adaptive) {
+        display: none;
+    }
+    & a {
+        text-decoration: none;
+        font-weight: 600;
+        color: #fff;
+        & .header_icon {
+            display: block;
+        }
+        & .header_icon_hover {
+            display: none;
+        }
+        &:hover {
+            & .header_icon {
+                display: none;
+            }
+            & .header_icon_hover {
+                display: block;
+            }
+        }
+    }
+    & span {
+        margin-right: 10px;
+    }
+    .geo,
+    .phone,
+    .clock {
+        @include makeitflex(row, flex-start);
+        align-items: center;
+        @media(max-width: $width_adaptive) {
+            display: flex;
+            align-items: center;
+            height: 25px;
+        }
+    }
+    .phone {
+        // display: flex;
+        // align-items: end;
+        &__links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .headerContactsButton {
+        z-index: 1;
+        position: relative;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        border-radius: 8px;
+        background: transparent;
+        background: transparent;
+        box-sizing: border-box;
+        padding: 13px 40px;
+        padding: 13px 40px;
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            top: -2px;
+            bottom: -2px;
+            left: -2px;
+            right: -2px;
+            content: '';
+            border: 2px solid;
+            border-radius: 8px;
+            border-image: linear-gradient(205.32deg, #FFFFFF 43.81%, #272A32 74.72%, #10131A 95.63%) 1;
+        }
+        .headerContactsButtonText {
+            margin: 0;
+            background: linear-gradient(180deg, #FFFFFF 0%, #444A59 100%);
+            -webkit-background-clip: text;
+            font-family: Rubick, sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .socialLinks {
+        @include makeitflex(row, space-between);
+        width: 10%;
+    }
+    .menu_btn {
+        border-corner-image: url('./assets/images/header/menu_btn.svg');
+    }
+}

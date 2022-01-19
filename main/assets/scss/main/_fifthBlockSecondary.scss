@@ -1,0 +1,171 @@
+.fifthBlockSecondary {
+    position: relative;
+    display: none;
+    margin-top: 41px;
+    padding: 0 4.16vw;
+    .fifthBlockSecondaryHead {
+        display: flex;
+        justify-content: space-between;
+        .stages {
+            display: flex;
+            .stageStageItem {
+                margin-right: 3px;
+                background: linear-gradient(180deg, #1A1F31 0%, #04070C 100%);
+                // height: 38px;
+                // padding: 15px 58px;
+                padding: 1vw 2vw;
+                text-transform: uppercase;
+                font-family: Rubick, sans-serif;
+                font-size: 24/1920*100vw;
+                line-height: 31/24*100%;
+                font-weight: 500;
+                color: #515359;
+                cursor: pointer;
+                box-shadow: 0px 4px 15px 0px #000000B2 inset;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                @media(max-width: $width_adaptive) {
+                    // padding: 18/375*100vw 5/375*100vw;
+                    height: auto;
+                    font-size: 12/375*100vw;
+                    line-height: 130%;
+                }
+                &.stageActive {
+                    background: linear-gradient(92.66deg, rgba(52, 53, 63, 0.1) 13.05%, rgba(27, 29, 44, 0.1) 98.43%), linear-gradient(182.56deg, rgba(55, 52, 133, 0.8) 1.46%, rgba(9, 13, 28, 0.8) 116.82%);
+                    color: #fff;
+                }
+            }
+        }
+        .graphSecondary {
+            background: linear-gradient(180deg, #1A1F31 0%, #04070C 100%);
+            height: 38px;
+            padding: 15px 58px;
+            text-transform: uppercase;
+            font-family: Rubick, sans-serif;
+            font-size: 24px;
+            line-height: 31px;
+            font-weight: 500;
+            color: #515359;
+            cursor: pointer;
+            box-shadow: 0px 4px 15px 0px #000000B2 inset;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            @media(max-width: $width_adaptive) {
+                height: 10px;
+                padding: 17px 6px;
+                font-size: 15px;
+                line-height: 15px;
+                .graphImage {
+                    height: 100%;
+                }
+            }
+        }
+        #graphSecondary {
+            display: none;
+        }
+    }
+    .fifthBlockSecondaryTable {
+        background: linear-gradient(92.66deg, rgba(27, 29, 44, 0.1) 13.05%, rgba(52, 53, 63, 0.1) 98.43%), linear-gradient(211.45deg, rgba(4, 27, 71, 0.195) 12.93%, rgba(55, 52, 133, 0.395) 84.73%);
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        @media(max-width: $width_adaptive) {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .fifthBlockSecondaryTableHead {
+            display: flex;
+            padding: 25px 60px;
+            font-family: Rubick, sans-serif;
+            font-size: 24px;
+            line-height: 31px;
+            font-weight: 600;
+            text-align: center;
+            @media(max-width: $width_adaptive) {
+                padding: 6px;
+                font-size: 10/375*100vw;
+                line-height: 13/10*100%;
+            }
+        }
+        .fifthBlockSecondaryTableLine {
+            display: flex;
+            border-top: 1px solid #494880;
+            padding: 25px 60px;
+            font-family: Rubick, sans-serif;
+            font-size: 24px;
+            line-height: 31px;
+            font-weight: 300;
+            text-align: center;
+            @media(max-width: $width_adaptive) {
+                padding: 6px;
+                font-size: 12/375*100vw;
+                line-height: 15/12*100%;
+            }
+            .fifthBlockSecondaryTableLineDifference {
+                background: linear-gradient(180deg, #A33134 0%, #660E11 100%);
+                -webkit-background-clip: text;
+                font-weight: 600;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .fifthBlockSecondaryTableHead p:nth-child(1),
+        .fifthBlockSecondaryTableLine p:nth-child(1) {
+            text-align: left;
+        }
+        .fifthBlockSecondaryTableHead p,
+        .fifthBlockSecondaryTableLine p {
+            margin: 0;
+            width: 25%;
+            align-self: center;
+        }
+        .graphPage {
+            display: none;
+            padding: 60px;
+            @media(max-width: $width_adaptive) {
+                padding: 10px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.orderBlock {
+    position: relative;
+    display: none;
+    padding: 21px 4.16vw;
+    .orderBlockWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        background: linear-gradient(92.66deg, rgba(27, 29, 44, 0.1) 13.05%, rgba(52, 53, 63, 0.1) 98.43%), linear-gradient(211.45deg, rgba(4, 27, 71, 0.195) 12.93%, rgba(55, 52, 133, 0.395) 84.73%);
+        padding: 15px 4.16vw;
+        @media(max-width: $width_adaptive) {
+            flex-direction: column;
+        }
+        .orderInfo {
+            text-transform: uppercase;
+            font-family: Rubick, sans-serif;
+            font-size: 24px;
+            line-height: 31px;
+            font-weight: 600;
+            @media(max-width: $width_adaptive) {
+                margin-bottom: 15px;
+                font-size: 22px;
+            }
+        }
+        .orderButton {
+            @media(max-width: $width_adaptive) {
+                width: 100%;
+                text-align: center !important;
+            }
+            .redButton {
+                @media(max-width: $width_adaptive) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@mixin social__link($clr1, $bcgclr1, $clr2, $bcgclr2) {
+    background-color: $bcgclr1;
+    transition: fill $transition_time linear, background-color $transition_time linear;
+    fill: $clr1;
+    &:hover {
+        background-color: $bcgclr2;
+        fill: $clr2;
+    }
+}
+
+@mixin makeitflex($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}

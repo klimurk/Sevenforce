@@ -1,0 +1,211 @@
+:root {
+    --anim-size1: 1.5;
+}
+
+body {
+    background-color: $themecolor0;
+    color: $themecolor1;
+}
+
+@import "_mixins";
+@import "_animations";
+
+/*     Container
+============================= */
+
+.container {
+    position: relative;
+    margin: 0 $margin_horizontal_device;
+    @media(max-width: $width_adaptive) {
+        margin: 0 $margin_horizontal_phone;
+    }
+}
+
+.body__inner {
+    @include makeitflex( column, flex-start);
+    opacity: 0;
+    min-height: calc(var(--fullvh)*100);
+    overflow: hidden;
+}
+
+.content {
+    @include makeitflex(column, flex-start);
+    position: relative;
+    background-image: url('./assets/images/main/waves.svg');
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    padding-top: 100px;
+    min-height: 100vh;
+    @media(max-width: $width_adaptive) {
+        background-image: url('./assets/images/main/wavesMobile.svg');
+        overflow: hidden;
+        // padding-top: 0;
+        padding-top: calc(60px + 8vw);
+    }
+}
+
+.only_mobile {
+    display: none !important;
+    @media(max-width: $width_adaptive) {
+        display: block !important;
+    }
+}
+
+.only_desktop {
+    @media (max-width: 1023px) {
+        display: none !important;
+    }
+}
+
+.redButton {
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(197, 43, 48, 0.3) 0%, rgba(64, 0, 2, 0.3) 100%);
+    box-sizing: border-box;
+    padding: 13px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    &::before {
+        position: absolute;
+        top: -2px;
+        bottom: -2px;
+        left: -2px;
+        right: -2px;
+        content: '';
+        border: 2px solid;
+        border-radius: 8px;
+        border-image: linear-gradient(180deg, #C52B30 41.67%, #FF262D 80.73%, #400002 100%) 1;
+    }
+    &:hover {
+        background: linear-gradient(180deg, rgba(197, 43, 48, 0.85) 0%, rgba(64, 0, 2, 0.85) 100%);
+    }
+    & br {
+        display: none !important;
+    }
+    &.ajax-loader {
+        display: none !important;
+    }
+    .redButtonText {
+        margin: 0;
+        font-family: Rubick, sans-serif;
+        font-size: 18/1920*100vw;
+        font-weight: 500;
+        color: #fff;
+        @media(max-width: $width_adaptive) {
+            font-size: 14/375*100vw;
+        }
+    }
+}
+
+.chatbotBtn {
+    @include makeitflex(row,
+    center);
+    z-index: 1;
+    position: relative;
+    border: 2px solid;
+    border-radius: 8px;
+    background-color: #000;
+    height: auto;
+    padding: 14/1920*100vw 30/1920*100vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-image: linear-gradient(152deg, #FFFFFF 43.81%, #272A32 74.72%, #10131A 95.63%) 1;
+    @media(max-width: $width_adaptive) {
+        padding: 9px 1vw;
+        font-size: 14/375*100vw;
+    }
+    & img {
+        margin: 0 9/1920*100vw;
+        ;
+        height: 50%;
+    }
+    & span {
+        margin: 0 9/1920*100vw;
+        background: -webkit-linear-gradient(270deg, #FFFFFF 0%, #444A59 100%);
+        -webkit-background-clip: text;
+        text-decoration: none;
+        font-family: Rubick, sans-serif;
+        font-size: 18/1920*100vw;
+        line-height: 23.4/18*100%;
+        font-weight: 600;
+        -webkit-text-fill-color: transparent;
+        align-self: center;
+    }
+}
+
+.whiteCircle {
+    border-radius: 50%;
+    margin-right: 9px;
+    background: #fff;
+    height: 13px;
+    width: 13px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #fff;
+}
+
+input,
+textarea {
+    outline: none;
+    border: 2px solid #f2f2f2;
+    border-radius: 8px;
+    background: transparent;
+    padding: 16px 20px 16px 34px;
+    font-family: Rubick, sans-serif;
+    font-size: 18/1920*100vw;
+    line-height: 24/18*100%;
+    font-weight: 400;
+    color: #f2f2f2;
+}
+
+option {
+    background: transparent;
+    color: #000;
+}
+
+iframe {
+    position: relative;
+    height: 28.64vw;
+    width: 42.34vw;
+    @media(max-width: $width_adaptive) {
+        height: 152px;
+        width: 100%;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: block !important;
+}
+
+.block {
+    //  SASS INHERITANCE  @extend @mixin, e.g. clearfix
+    //=============================
+    //GENERATED CONTENT   content
+    //=============================
+    // POSITION AND LAYOUT   position z-index top bottom left right Flexbox properties float clear
+    //=============================
+    // DISPLAY AND VISIBILITY display opacity transform
+    //=============================
+    // CLIPPING overflow clip
+    //=============================
+    // ANIMATION animation transition
+    //=============================
+    // BOX MODEL (FROM OUTSIDE IN)  margin box-shadow border border-radius box-sizing width height padding
+    //=============================
+    // BACKGROUND background cursor
+    //=============================
+    // TYPOGRAPHY font-size line-height font-family font-weight font-style text-align text-transform word-spacing color
+    //=============================
+    // PSEUDO-CLASSES & PSEUDO-ELEMENTS (NESTED RULES) :hover :focus :active :before :after :first-child :last-child
+    // ======================================================
+}

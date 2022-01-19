@@ -1,0 +1,176 @@
+.sixthBlock {
+    margin-top: 110px;
+    position: relative;
+    overflow: hidden;
+    .sixthBlockBG {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .sixBlockContent {
+        position: relative;
+        height: 100%;
+        padding: 55px 4.16vw;
+        .sixBlockContentHead {
+            display: flex;
+            align-items: flex-end;
+            @media(max-width: $width_adaptive) {
+                flex-direction: column;
+            }
+            .ask {
+                text-transform: uppercase;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 4.16vw;
+                font-weight: 800;
+                line-height: 5.62vw;
+                color: #fff;
+                background: linear-gradient(180deg, #FFFFFF 0%, rgba(16, 12, 12, 0) 184.66%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin: 0;
+            }
+            .answer {
+                width: 31.25vw;
+                color: #fff;
+                font-family: Rubick, sans-serif;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 23px;
+                margin-bottom: 20px;
+                margin-left: 70px;
+                @media(max-width: $width_adaptive) {
+                    font-size: 36px;
+                    line-height: 49px;
+                    background: linear-gradient(180deg, #FFFFFF 0%, rgba(16, 12, 12, 0) 184.66%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            @media(max-width:$width_adaptive) {
+                .ask,
+                .answer {
+                    width: 100%;
+                }
+            }
+        }
+        .carsWrap {
+            display: flex;
+            padding: 40px 0 0;
+            justify-content: space-between;
+            &.carWrap {
+                width: 30%;
+                @media(max-width: $width_adaptive) {
+                    width: 32%;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .smallInfo {
+            padding: 0;
+            color: #fff;
+            font-family: Rubick, sans-serif;
+            font-weight: 300;
+            font-size: 1.875vw;
+            line-height: 2vw;
+            margin-top: 25px;
+            @media(max-width: $width_adaptive) {
+                font-size: 14px;
+                line-height: 18px;
+                background: linear-gradient(180deg, #FFFFFF 0%, rgba(16, 12, 12, 0) 184.66%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: 600;
+            }
+        }
+        .blocks4 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            @media(max-width: $width_adaptive) {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .blocks4Block {
+                padding: 49px 4.16vw;
+                width: -webkit-fill-available;
+                margin: 0 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                @media(max-width: $width_adaptive) {
+                    margin-bottom: 10px;
+                    width: inherit;
+                }
+                &.blocks4Block1 {
+                    background: linear-gradient(71.77deg, rgba(18, 18, 18, 0.2) 4.43%, rgba(35, 35, 35, 0.2) 85.08%);
+                    box-shadow: inset 0px 0px 34px rgba(189, 52, 52, 0.35);
+                    border-radius: 30px;
+                }
+                &.blocks4Block2 {
+                    background: linear-gradient(71.77deg, rgba(18, 18, 18, 0.2) 4.43%, rgba(35, 35, 35, 0.2) 85.08%);
+                    box-shadow: inset 0px 0px 34px rgba(73, 13, 13, 0.35);
+                    border-radius: 30px;
+                }
+                &.blocks4Block3 {
+                    background: linear-gradient(71.77deg, rgba(18, 18, 18, 0.2) 4.43%, rgba(35, 35, 35, 0.2) 85.08%);
+                    box-shadow: inset 0px 0px 54px #100F36;
+                    border-radius: 30px;
+                }
+                &.blocks4Block4 {
+                    background: linear-gradient(71.77deg, rgba(18, 18, 18, 0.2) 4.43%, rgba(35, 35, 35, 0.2) 85.08%);
+                    box-shadow: inset 0px 0px 54px #221E8F;
+                    border-radius: 30px;
+                }
+                .blocks4BlockContent {
+                    font-family: Rubick, sans-serif;
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 15px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .blocks2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            .blocks2Block {
+                padding: 49px 4.16vw;
+                width: -webkit-fill-available;
+                margin: 0 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                &.blocks2Block1 {
+                    background: linear-gradient(71.77deg, rgba(18, 18, 18, 0.2) 4.43%, rgba(35, 35, 35, 0.2) 85.08%);
+                    border-radius: 30px;
+                }
+                &.blocks2Block2 {
+                    background: linear-gradient(71.77deg, rgba(18, 18, 18, 0.2) 4.43%, rgba(35, 35, 35, 0.2) 85.08%);
+                    box-shadow: inset 0px 0px 54px #211F61;
+                    border-radius: 30px;
+                }
+            }
+        }
+        @media(max-width:$width_adaptive) {
+            .blocks4Block,
+            .blocks2Block {
+                border-radius: 10px;
+                padding: 5px 18px;
+            }
+        }
+        .blocks4BlockHead,
+        .blocks2BlockHead {
+            font-family: Rubick, sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 23px;
+            @media(max-width: $width_adaptive) {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+    }
+}

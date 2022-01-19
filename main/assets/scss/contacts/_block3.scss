@@ -1,0 +1,91 @@
+.contacts_block3 {
+    position: relative;
+    // padding: 21.56vw 4.16vw 0;
+    // margin-top: 95/1920*100vw;
+    margin-bottom: 40/1920*100vw;
+    .sendForm {
+        border-radius: 50px;
+        margin: 0 auto;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0.08) 100%);
+        width: 1840/1920*100%;
+        overflow: hidden;
+        padding: 84px 8.33vw 100px;
+        ;
+        backdrop-filter: blur(240px);
+        @media(max-width: $width_adaptive) {
+            padding: 38/375*100vw 18/375*100vw;
+        }
+        & select,
+        & input {
+            margin-right: 2.08vw;
+            width: 24.16vw;
+        }
+        & input {
+            width: 13vw;
+            padding: 13px 20px 13px 34px;
+            @media(max-width: $width_adaptive) {
+                border: 1px solid #fff;
+                margin-right: 0 !important;
+                margin-bottom: 15px;
+                width: -webkit-fill-available;
+            }
+        }
+        & select {
+            width: 16vw;
+            padding: 13px 20px 13px 34px;
+            @media(max-width: $width_adaptive) {
+                margin-right: 0 !important;
+                width: 100%;
+            }
+        }
+        .eightGradient {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            @media(max-width: $width_adaptive) {
+                height: 100%;
+            }
+        }
+        .formData {
+            position: relative;
+            text-align: center;
+            & .redButton {
+                margin: 0 auto;
+                height: 50/1920*100vw;
+                width: 365/1920*100vw;
+                padding: 0;
+                text-align: center;
+                // padding: 0;
+                @media(max-width: $width_adaptive) {
+                    width: 100%;
+                    height: 48/375*100vw;
+                }
+                & input {
+                    border: none;
+                    margin: 0;
+                    width: 100%;
+                    padding: 13px 34px;
+                    cursor: pointer;
+                }
+            }
+            .sendFormHead {
+                position: relative;
+                margin-bottom: 40px;
+                background: linear-gradient(180deg, #FFFFFF 0%, rgba(16, 12, 12, 0) 184.66%);
+                -webkit-background-clip: text;
+                text-transform: uppercase;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 2.08vw;
+                line-height: 2.7vw;
+                font-weight: 800;
+                -webkit-text-fill-color: transparent;
+                @media(max-width: $width_adaptive) {
+                    margin-bottom: 20/375*100vw;
+                    font-size: 16/375*100vw;
+                    line-height: 20/16*100%;
+                }
+            }
+        }
+    }
+}

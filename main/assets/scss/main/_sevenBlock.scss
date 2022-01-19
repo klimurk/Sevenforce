@@ -1,0 +1,267 @@
+.sevenBlock {
+    position: relative;
+    margin-top: 95/1920*100vw;
+    padding: 0 4.16vw;
+    @media(max-width: $width_adaptive) {
+        margin-top: 30px;
+    }
+    .sevenBlockHead {
+        width: 100%;
+        text-transform: uppercase;
+        font-style: normal;
+        // text-transform: uppercase;
+        // font-family: 'Open Sans', sans-serif;
+        // font-size: 4.16vw;
+        // font-weight: 800;
+        // line-height: 5.62vw;
+        // color: #fff;
+        // background: linear-gradient(180deg, #FFFFFF 0%, rgba(16, 12, 12, 0) 184.66%);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 40px;
+        line-height: 130%;
+        font-weight: 800;
+        color: #FFFFFF;
+        @media(max-width: $width_adaptive) {
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(16, 12, 12, 0) 184.66%);
+            -webkit-background-clip: text;
+            font-size: 36px;
+            line-height: 49px;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .sevenGradient {
+        position: absolute;
+        top: 0;
+        left: -4.16vw;
+        width: calc(100% + 4.16vw);
+        @media(max-width: $width_adaptive) {
+            display: none;
+        }
+    }
+    .carsContentWrap {
+        position: relative;
+        margin-top: 15px;
+        overflow: hidden;
+        .carBig {
+            position: relative;
+            width: 100%;
+            @media(max-width: $width_adaptive) {
+                margin-top: 80px;
+            }
+        }
+        .carsTriple {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 66%;
+            @media(max-width: $width_adaptive) {
+                width: 100%;
+            }
+        }
+        .bmwInfoWrap {
+            position: absolute;
+            top: 20vw;
+            right: 6.77vw;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            @media(max-width: $width_adaptive) {
+                position: unset;
+                right: 0;
+                align-items: flex-end;
+                margin-top: -22vmin;
+                width: 100%;
+            }
+            .bmwInfoHead {
+                font-family: Rubick, sans-serif;
+                font-size: 1.19vw;
+                line-height: 1.66vw;
+                font-weight: 500;
+                color: #878787;
+                text-align: right;
+                @media(max-width: $width_adaptive) {
+                    margin-right: 10vw;
+                    width: 27%;
+                    font-size: 14/375*100vw;
+                    line-height: 19/14*100%;
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+            .before {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40/1920*100vw;
+                width: 60%;
+                align-self: flex-end;
+                @media(max-width: $width_adaptive) {
+                    flex-wrap: wrap;
+                    margin-top: 10vw;
+                    width: 100%;
+                }
+                & .word {
+                    margin-right: 15px;
+                    background: linear-gradient(137.95deg, #4053FF 21.75%, #373485 39.3%);
+                    -webkit-background-clip: text;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.56vw;
+                    line-height: 2.03vw;
+                    font-weight: 800;
+                    -webkit-text-fill-color: transparent;
+                    @media(max-width: $width_adaptive) {
+                        width: 100%;
+                        font-size: 14/375*100vw !important;
+                        line-height: 18/14*100% !important;
+                    }
+                }
+                & .block1 {
+                    width: 25%;
+                }
+                & .block2 {
+                    width: 33%;
+                }
+            }
+            .after {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+                width: 70%;
+                align-self: flex-end;
+                @media(max-width: $width_adaptive) {
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+                & .word {
+                    margin-right: 15px;
+                    background: linear-gradient(217.16deg, rgba(55, 52, 133, 0.5) -84.08%, rgba(4, 27, 71, 0.195) 261.39%), linear-gradient(135.39deg, rgba(208, 5, 0, 0) -28.26%, rgba(208, 5, 0, 0.9) 80%);
+                    -webkit-background-clip: text;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.56vw;
+                    line-height: 2.03vw;
+                    font-weight: 800;
+                    -webkit-text-fill-color: transparent;
+                    @media(max-width: $width_adaptive) {
+                        width: 100%;
+                        font-size: 14/375*100vw !important;
+                        line-height: 18/14*100% !important;
+                    }
+                }
+            }
+            .after .block1,
+            .after .block2,
+            .before .block1,
+            .before .block2 {
+                display: flex;
+                flex-direction: column;
+                width: 32%;
+                @media(max-width: $width_adaptive) {
+                    width: 50%;
+                }
+                .blockHead {
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                    font-family: Rubick, sans-serif;
+                    font-size: 0.93vw;
+                    line-height: 1.19vw;
+                    font-weight: 600;
+                    @media(max-width: $width_adaptive) {
+                        font-size: 14/375*100vw;
+                        line-height: 18/14*100%;
+                    }
+                }
+                .blockContent {
+                    font-family: Rubick, sans-serif;
+                    font-size: 0.83vw;
+                    line-height: 1.19vw;
+                    font-weight: 300;
+                    @media(max-width: $width_adaptive) {
+                        font-size: 12/375*100vw;
+                        line-height: 15/12*100%;
+                        .whiteCircle {
+                            height: 7px;
+                            width: 7px;
+                        }
+                    }
+                    p {
+                        display: flex;
+                        align-items: center;
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+    .mostFast {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        margin-top: 85px;
+        padding: 0 8.85vw;
+        @media(max-width: $width_adaptive) {
+            flex-direction: column;
+            margin-top: 15px;
+            padding: 0;
+        }
+        .mostFastLeft {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 50%;
+            @media(max-width: $width_adaptive) {
+                width: 100%;
+            }
+            .mostFastLeftHead {
+                margin-bottom: 34px;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 2.08vw;
+                line-height: 2.81vw;
+                font-weight: 800;
+                @media(max-width: $width_adaptive) {
+                    margin-bottom: 14/375*100vw;
+                    font-size: 16/375*100vw;
+                    line-height: 21/16*100%;
+                }
+            }
+            .mostFastLeftInfo {
+                width: 75%;
+                font-family: Rubick, sans-serif;
+                font-size: 0.93vw;
+                line-height: 1.19vw;
+                font-weight: 400;
+                @media(max-width: $width_adaptive) {
+                    width: 100%;
+                    font-size: 14/375*100vw;
+                    line-height: 18/14*100%;
+                }
+            }
+        }
+        .mostFastRight {
+            position: relative;
+            width: 50%;
+            @media(max-width: $width_adaptive) {
+                margin-top: 20px;
+                width: 100%;
+            }
+            .starImage {
+                position: absolute;
+                bottom: -60%;
+                right: -28%;
+                @media(max-width: $width_adaptive) {
+                    display: none;
+                }
+            }
+            & .video {
+                height: 100%;
+                @media(max-width: $width_adaptive) {
+                    position: relative;
+                    height: 188/375*100vw;
+                    width: 335/375*100vw;
+                }
+            }
+        }
+    }
+}

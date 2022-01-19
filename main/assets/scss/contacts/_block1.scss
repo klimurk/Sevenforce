@@ -1,0 +1,138 @@
+.contacts_block1 {
+    margin-bottom: 90/1920*100vw;
+    padding: 22/1920*100vw 60/1920*100vw 0;
+    @media(max-width: $width_adaptive) {
+        margin-bottom: 36/375*100vw;
+        width: 100%;
+        padding: 0;
+    }
+    &_headline {
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(16, 12, 12, 0) 287.04%);
+        -webkit-background-clip: text;
+        width: 800/1920*100%;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 80/1920*100vw;
+        line-height: 108.8/80*100%;
+        font-weight: 800;
+        color: #fff;
+        text-align: left;
+        -webkit-text-fill-color: transparent;
+        @media(max-width: $width_adaptive) {
+            width: auto;
+            font-size: 36/375*100vw;
+            line-height: 49/36*100%;
+        }
+    }
+    &__info {
+        @include makeitflex(row, center);
+        flex-wrap: wrap;
+        border-radius: 50px;
+        background-image: linear-gradient(180deg, rgba(155, 39, 39, 0.16) 56.9%, rgba(179, 34, 34, 0.73) 100%);
+        @media(max-width: $width_adaptive) {
+            justify-content: space-around;
+        }
+        & a {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        &>img {
+            width: 100%;
+        }
+        &__col {
+            @include makeitflex(column, flex-start);
+            margin: 65/1920*100vw 20/1920*100vw;
+            @media(max-width: $width_adaptive) {
+                margin: 15/375*100vw 0;
+                max-width: 45%;
+            }
+            &:last-child {
+                @media(max-width: $width_adaptive) {
+                    max-width: 100%;
+                    .contacts_block1__info__col__item {
+                        @include makeitflex(row, space-evenly);
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+            &__item {
+                @include makeitflex(row, flex-start);
+                align-items: center;
+                letter-spacing: 0.09em;
+                font-family: Rubick, sans-serif;
+                font-size: 24/1920*100vw;
+                line-height: 33/24*100%;
+                font-weight: normal;
+                @media(max-width: $width_adaptive) {
+                    font-size: 12/375*100vw;
+                    line-height: 16.32/12*100%;
+                    margin-bottom: 5px;
+                }
+                &>svg {
+                    margin-right: 10px;
+                    height: 50/1920*100vw;
+                    width: 50/1920*100vw;
+                    @media(max-width: $width_adaptive) {
+                        height: 16/375*100vw;
+                        width: 16/375*100vw;
+                    }
+                }
+                &>a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+                &__social {
+                    @include makeitflex(column, flex-start);
+                    // text-align: center;
+                    margin: 0 10/1920*100vw;
+                    @media(max-width: $width_adaptive) {
+                        margin: 0 0 15/375*100vw;
+                        width: 38%;
+                        text-align: center;
+                    }
+                    &_icon {
+                        margin: 0 auto 20/1920*100vw;
+                        height: 50/1920*100vw;
+                        width: 50/1920*100vw;
+                        @media(max-width: $width_adaptive) {
+                            margin: 0 auto 5/375*100vw;
+                            height: 35/375*100vw;
+                            width: 35/375*100vw;
+                        }
+                    }
+                    &_text {
+                        font-size: 12/1920*100vw;
+                        line-height: 15.8/12*100%;
+                        @media(max-width: $width_adaptive) {
+                            font-size: 12/375*100vw;
+                        }
+                    }
+                }
+            }
+            .chatbotBtn {
+                margin: 20/1920*100vw auto 0;
+                height: 50/1920*100vw;
+                width: 192/1920*100vw;
+                background-color: transparent;
+                @media(max-width: $width_adaptive) {
+                    width: 142/375*100vw;
+                    height: 36/375*100vw;
+                    margin-top: 15/375*100vw;
+                }
+                & img {
+                    margin-left: 0;
+                    height: 100%;
+                }
+                & span {
+                    margin-right: 0;
+                    font-size: 18/1920*100vw;
+                    line-height: 23.4/18*100%;
+                    @media(max-width: $width_adaptive) {
+                        font-size: 14/375*100vw
+                    }
+                }
+            }
+        }
+    }
+}

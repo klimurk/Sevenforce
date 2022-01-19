@@ -1,0 +1,47 @@
+.secondBlock {
+    position: relative;
+    & .about {
+        display: flex;
+        padding: 140px 4.16vw 0;
+        @media(max-width: $width_adaptive) {
+            flex-direction: column;
+        }
+        .aboutLeft {
+            margin: 0;
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(16, 12, 12, 0) 184.66%);
+            -webkit-background-clip: text;
+            width: 35%;
+            text-transform: uppercase;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 4.16vw;
+            line-height: 5.62vw;
+            font-weight: 800;
+            color: #fff;
+            -webkit-text-fill-color: transparent;
+            @media(max-width: $width_adaptive) {
+                margin-bottom: 2vw;
+                font-size: 36/375*100vw;
+                line-height: 38/36*100%;
+            }
+        }
+        .aboutRight {
+            width: 65%;
+            font-family: Rubick, sans-serif;
+            font-size: 0.93vw;
+            line-height: 1.19vw;
+            font-weight: 300;
+            color: #fff;
+            @media(max-width: $width_adaptive) {
+                font-size: 14/375*100vw;
+                line-height: 18/14*100%;
+            }
+            & span {
+                font-weight: 600;
+            }
+        }
+        .aboutLeft,
+        .aboutRight {
+            width: 100%;
+        }
+    }
+}

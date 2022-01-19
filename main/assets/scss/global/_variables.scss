@@ -1,0 +1,27 @@
+//     *screen width
+//======================================
+$width_phoneVer:320px;
+$width_phoneHor:480px;
+$width_iPadVer: 600px;
+$width_iPadHor: 800px;
+$width_tablet: 1024px;
+$width_phone: 1280px;
+$width_fullhd: 1920px;
+$width_adaptive: $width_tablet;
+//     *colors
+//======================================
+$themecolor0:#000;
+$themecolor1: #fff;
+$themecolor2: #000;
+//     *margins paddings
+//======================================
+$margin_horizontal_device: 50px;
+$margin_horizontal_phone: 10px;
+$margin_vertical_blocks: 10rem;
+//    *fonts
+//======================================
+$h2Font: 6.5vw;
+//      *animation
+//====================================
+$transition_time:.2s;
+$transition_anim_type: ease-in;

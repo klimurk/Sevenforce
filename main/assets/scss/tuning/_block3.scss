@@ -1,0 +1,105 @@
+.tuning_block3 {
+    position: relative;
+    // padding: 21.56vw 4.16vw 0;
+    margin-top: 95/1920*100vw;
+    margin-bottom: 40/1920*100vw;
+    .sendForm {
+        border-radius: 50px;
+        margin: 0 auto;
+        background: url('./assets/images/chiptuning/Block5/Mask.png') no-repeat;
+        background-size: cover;
+        width: 1840/1920*100%;
+        overflow: hidden;
+        padding: 84px 335/1920*100vw 100px 200/1920*100vw;
+        backdrop-filter: blur(240px);
+        @media(max-width: $width_adaptive) {
+            background: url('./assets/images/tuning/block3/Mask_mobile.png') no-repeat;
+            background-size: cover;
+            padding: 38/375*100vw 18/375*100vw;
+        }
+        .formData {
+            @include makeitflex(row,
+            flex-end);
+            position: relative;
+            text-align: right;
+            @media(max-width: $width_adaptive) {
+                @include makeitflex(column, flex-start);
+            }
+            & .redButton {
+                margin: 0 auto;
+                width: 100%;
+                padding: 0;
+                @media(max-width: $width_adaptive) {
+                    margin: 0;
+                    height: 48/375*100vw;
+                    width: 100%;
+                    font-size: 14/375*100vw;
+                }
+                .ajax-loader {
+                    display: none !important;
+                }
+                & input {
+                    border: none;
+                    height: 100%;
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+            .sendFormHead {
+                position: relative;
+                margin-right: 98/1920*100vw;
+                margin-bottom: 40px;
+                background: linear-gradient(180deg, #FFFFFF 0%, rgba(16, 12, 12, 0) 184.66%);
+                -webkit-background-clip: text;
+                text-transform: uppercase;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 2.08vw;
+                line-height: 2.7vw;
+                font-weight: 800;
+                -webkit-text-fill-color: transparent;
+                @media(max-width: $width_adaptive) {
+                    margin-bottom: 20/375*100vw;
+                    font-size: 16/375*100vw;
+                    line-height: 20/16*100%;
+                    text-align: left;
+                }
+            }
+            .userData {
+                // width: 363/1304*100%;
+                @include makeitflex(column,
+                flex-start);
+                width: 1090/1920*100vw;
+                @media(max-width: $width_adaptive) {
+                    width: 100%;
+                }
+                & input,
+                & textarea {
+                    margin-bottom: 30/1920*100vw;
+                    width: 100%;
+                    @media(max-width: $width_adaptive) {
+                        margin-bottom: 20/375*100vw;
+                        height: 40/375*100vw;
+                        font-size: 14/375*100vw;
+                    }
+                }
+                & textarea {
+                    height: 115/1920*100vw;
+                    @media(max-width: $width_adaptive) {
+                        height: 92/375*100vw;
+                    }
+                }
+                & .text {
+                    & .wpcf7-text {
+                        display: block;
+                        height: 115/1920*100vw;
+                        word-wrap: break-word;
+                        white-space: pre;
+                        @media(max-width: $width_adaptive) {
+                            height: 92/375*100vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

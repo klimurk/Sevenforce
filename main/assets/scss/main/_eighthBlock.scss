@@ -1,0 +1,192 @@
+.eighthBlock {
+    position: relative;
+    // margin-top: -6.25vw;
+    margin-top: 0;
+    margin-bottom: 6.25vw;
+    padding: 9.5vw 4.16vw 0;
+    @media(max-width: $width_adaptive) {
+        margin-top: -5vw;
+        padding-top: 14.5vw;
+    }
+    .eightGradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        @media(max-width: $width_adaptive) {
+            top: 40vw;
+            transform: scale(3.5);
+        }
+    }
+    .sendForm {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+        overflow: hidden;
+        padding: 84px 8.33vw 100px;
+        backdrop-filter: blur(240px);
+        @media(max-width: $width_adaptive) {
+            padding: 12px 17px;
+        }
+        & select,
+        & input {
+            // width: 100;
+            margin-right: 2.08vw;
+            width: 24.16vw;
+            @media (max-width: $width_adaptive) {
+                margin-bottom: 15/375*100vw;
+                font-size: 14/375*100vw;
+            }
+            /* width: 100%; */
+        }
+        & input {
+            /* width: calc(24.7% - 54px); */
+            width: 100%;
+            padding: 13px 20px 13px 34px;
+            @media(max-width: $width_adaptive) {
+                border: 1px solid #fff;
+                margin-right: 0 !important;
+                margin-bottom: 15px;
+                width: -webkit-fill-available;
+            }
+        }
+        & select {
+            width: 16vw;
+            padding: 13px 20px 13px 34px;
+            @media(max-width: $width_adaptive) {
+                margin-right: 0 !important;
+                width: 100%;
+            }
+        }
+        .formBg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            @media(max-width: $width_adaptive) {
+                display: none;
+            }
+        }
+        .formData {
+            position: relative;
+            @media(max-width: $width_adaptive) {
+                .userData>span {
+                    width: 100%;
+                }
+            }
+            & .redButton {
+                width: 16vw;
+                padding: 0;
+                @media(max-width: $width_adaptive) {
+                    margin-top: 22/375*100vw;
+                    width: 100%;
+                }
+                & input {
+                    border: none;
+                    margin: 0;
+                    width: 100%;
+                    padding: 13px 34px;
+                    cursor: pointer;
+                }
+                .ajax-loader {
+                    display: none !important;
+                }
+            }
+            .sendFormHead,
+            .carHead {
+                position: relative;
+                margin-bottom: 40px;
+                background: linear-gradient(180deg, #FFFFFF 0%, rgba(16, 12, 12, 0) 184.66%);
+                -webkit-background-clip: text;
+                text-transform: uppercase;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 2.08vw;
+                line-height: 2.7vw;
+                font-weight: 800;
+                -webkit-text-fill-color: transparent;
+                @media(max-width: $width_adaptive) {
+                    margin-bottom: 20/375*100vw;
+                    font-size: 16/375*100vw;
+                    line-height: 20/16*100%;
+                }
+            }
+            .userData {
+                position: relative;
+                display: flex;
+                margin-bottom: 50px;
+                @media(max-width: $width_adaptive) {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 40px;
+                }
+            }
+            .carData {
+                & select {
+                    outline: none;
+                    border: 2px solid #f2f2f2;
+                    border-radius: 8px;
+                    background: transparent;
+                    width: 100%;
+                    padding: 13px 20px 13px 34px;
+                    font-family: Rubick, sans-serif;
+                    font-size: 18/1920*100vw;
+                    line-height: 24/18*100%;
+                    font-weight: 400;
+                    color: #f2f2f2;
+                    @media(max-width: $width_adaptive) {
+                        margin-bottom: 15px !important;
+                        font-size: 14/375*100vw;
+                    }
+                }
+                .carDataTop,
+                .carDataBot {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 30px;
+                    @media(max-width: $width_adaptive) {
+                        flex-direction: column;
+                        margin-bottom: 0;
+                        .carDataTop>span,
+                        .carDataBot>span {
+                            width: 100%;
+                        }
+                        .carDataTop>br,
+                        .carDataBot>br {
+                            display: none;
+                        }
+                    }
+                }
+                .carDataTop {
+                    &>span {
+                        & .carData {
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 50px;
+                        }
+                    }
+                }
+            }
+            .userData>span,
+            .carDataTop>span,
+            .carDataBot>span {
+                margin-right: 5vw;
+                /* width: calc(24.7% - 54px); */
+                width: 16vw;
+                @media(max-width: $width_adaptive) {
+                    width: 100%;
+                }
+                /* padding: 13px 20px 13px 34px; */
+            }
+        }
+    }
+}
+
+.wpcf7-response-output {
+    border: 2px solid #f2f2f2 !important;
+    border-radius: 8px;
+    margin: 2em 0 1em !important;
+    background: transparent;
+    padding: 13px 20px 13px 34px !important;
+    font-family: Rubick, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #f2f2f2;
+}

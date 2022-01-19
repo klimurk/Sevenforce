@@ -1,0 +1,44 @@
+.chip_description {
+    margin-bottom: 95/1920*100vw;
+    @media(max-width: $width_adaptive) {
+        margin-bottom: 30/375*100vw;
+    }
+    &_inner {
+        @include makeitflex(row, space-between);
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 0px 50px;
+        margin: 95/1920*100vw 60/1920*100vw 0;
+        background: linear-gradient(92.66deg, rgba(27, 29, 44, 0.4) 13.05%, rgba(52, 53, 63, 0.4) 98.43%);
+        @media(max-width: $width_adaptive) {
+            @include makeitflex(column, flex-start);
+        }
+        &.inner2 {
+            @media(max-width: $width_adaptive) {
+                flex-direction: column-reverse;
+            }
+        }
+        &_photo {
+            width: 50%;
+            @media(max-width: $width_adaptive) {
+                margin-bottom: 15/375*100vw;
+                width: 100%;
+            }
+        }
+        &_text {
+            width: 50%;
+            padding: 0 50/1920*100vw;
+            font-family: Rubick, sans-serif;
+            // text-align: center;
+            font-size: 18/1920*100vw;
+            line-height: 32.58/18*100%;
+            font-weight: 300;
+            @media(max-width: $width_adaptive) {
+                margin-bottom: 40/375*100vw;
+                width: 100%;
+                font-size: 14/375*100vw;
+                line-height: 21/14*100%;
+            }
+        }
+    }
+}

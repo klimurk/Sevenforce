@@ -1,0 +1,67 @@
+.fifthBlock {
+    position: relative;
+    border-radius: 10px;
+    margin: 5vw 4.16vw 0;
+    background: linear-gradient(211.45deg, rgba(4, 27, 71, 0.195) 12.93%, rgba(55, 52, 133, 0.5) 84.73%), linear-gradient(106.08deg, rgba(208, 5, 0, 0) 48.61%, rgba(208, 5, 0, 0.3) 78.41%);
+    padding: 60px 4.16vw;
+    backdrop-filter: blur(4px);
+    @media(max-width: $width_adaptive) {
+        margin: 5vw 0 0;
+        width: 100%;
+        padding: 20/375*100vw;
+        padding-bottom: 0;
+        font-size: 16/375*100vw;
+        line-height: 21/16*100%;
+    }
+    .fifthBlockHead {
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        font-style: normal;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 40px;
+        line-height: 136%;
+        font-weight: 800;
+        color: #fff;
+    }
+    .selectsWrap {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        @media(max-width: $width_adaptive) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        select {
+            outline: none;
+            border: 2px solid #f2f2f2;
+            border-radius: 8px;
+            background: transparent;
+            width: 23%;
+            padding: 16px 20px 16px 34px;
+            font-family: Rubick, sans-serif;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #f2f2f2;
+            // -webkit-appearance: none;
+            // -moz-appearance: none;
+            // background: transparent;
+            // background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 16 11" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.00098 9.09526L1.54872 0.348314C1.26829 -0.0318455 0.731792 -0.113422 0.35041 0.166106C-0.0309716 0.445636 -0.112811 0.98042 0.167616 1.36058L6.85005 10.4196C7.42093 11.1935 8.58102 11.1935 9.1519 10.4196L15.8343 1.36058C16.1148 0.98042 16.0329 0.445636 15.6515 0.166106C15.2702 -0.113422 14.7337 -0.0318455 14.4532 0.348314L8.00098 9.09526Z" fill="url(#paint0_linear_68:9680)"/><defs><linearGradient id="paint0_linear_68:9680" x1="8.00098" y1="10.5375" x2="8.00098" y2="-7.40465" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="1" stop-color="#0D121B"/></linearGradient></defs></svg>') no-repeat;
+            // background-position-x: 100%;
+            // background-position-y: 5px;
+            // border: 1px solid #dfdfdf;
+            // border-radius: 2px;
+            // margin-right: 2rem;
+            // padding: 1rem;
+            // padding-right: 2rem;
+            @media(max-width: $width_adaptive) {
+                // height: 10vw;
+                margin-bottom: 25px;
+                width: 45%;
+                padding-left: 12px;
+                font-size: 14/375*100vw;
+                line-height: 18.2/14*100%;
+            }
+        }
+    }
+}

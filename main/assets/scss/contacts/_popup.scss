@@ -1,0 +1,156 @@
+.contacts_popup {
+    background: rgba(#000000, 0.8);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .popupBlock {
+        background: linear-gradient(180deg, #1B1D2C 0%, #0C0D15 100%);
+        border-radius: 50px;
+        padding: 50px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @media(max-width: $width_adaptive) {
+            background: linear-gradient(180deg, #1B1D2C 0%, #0C0D15 100%);
+            border-radius: 50px;
+            padding: 15vw 1.2vw 5vw;
+            position: fixed;
+            // width: auto;
+            width: 90%;
+            // width: 60vw;
+        }
+        .close {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            @media(max-width: $width_adaptive) {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 30px;
+                right: 30px;
+            }
+        }
+        .error {
+            max-width: 600px;
+            @media(max-width: $width_adaptive) {
+                max-width: 600px;
+            }
+            .popupImg {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                @media(max-width: $width_adaptive) {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .popupContent {
+                justify-content: center;
+            }
+        }
+        .popupContent {
+            padding: 62px 104px 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 18/1920*100vw;
+            line-height: 24/18*100%;
+            text-align: center;
+            font-family: Rubick, sans-serif;
+            @media(max-width: $width_adaptive) {
+                font-size: 18/375*100vw;
+            }
+        }
+        .popupButton {
+            margin-top: 51px;
+            display: flex;
+            justify-content: center;
+            @media(max-width: $width_adaptive) {
+                margin-top: 51px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .popupHead {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 24/1920*100vw;
+            line-height: 36/24*100%;
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(16, 12, 12, 0) 184.66%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+            @media(max-width: $width_adaptive) {
+                font-size: 18/375*100vw;
+                line-height: 27/18*100%;
+                margin-bottom: 20/375*100vw;
+            }
+        }
+        .leave {
+            width: 1000/1920*100vw;
+            height: 500/1920*100vw;
+            padding: 110/1920*100vw 70/1920*100vw 120/1920*100vw;
+            @media(max-width: $width_adaptive) {
+                height: auto;
+                width: 100%;
+                // padding: 95/375*100vw 20/1920*100vw 65/375*100vw;
+                padding: 0;
+            }
+            .popupContent {
+                @include makeitflex(row, space-between);
+                padding: 0 70/1920*100vw;
+                margin: 50/1920*100vw 0;
+                @media(max-width: $width_adaptive) {
+                    flex-direction: column;
+                }
+            }
+            .Name,
+            .phoneNum {
+                @media(max-width: $width_adaptive) {
+                    margin-bottom: 40/375*100vw;
+                }
+                & input {
+                    width: 280/1920*100vw;
+                    height: 45/1920*100vw;
+                    @media(max-width: $width_adaptive) {
+                        width: 100%;
+                        height: 45/375*100vw;
+                        font-size: 14/375*100vw;
+                    }
+                }
+            }
+            .redButton {
+                padding: 0;
+                margin: 0 auto;
+                @media(max-width: $width_adaptive) {
+                    width: 80%;
+                }
+                & input {
+                    text-align: center;
+                    border: none;
+                    padding: 12/1920*100vw 60/1920*100vw;
+                    @media(max-width: $width_adaptive) {
+                        width: 100%;
+                        font-size: 18/375*100vw;
+                        padding: 12/375*100vw 60/375*100vw;
+                    }
+                }
+                .ajax-loader {
+                    display: none !important;
+                }
+            }
+            .formData>p {
+                text-align: center;
+            }
+        }
+    }
+}

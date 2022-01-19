@@ -1,0 +1,105 @@
+.contacts_block2 {
+    @include makeitflex(row, space-between);
+    flex-wrap: wrap;
+    margin-bottom: 95/1920*100vw;
+    padding: 0 60/1920*100vw;
+    @media(max-width: $width_adaptive) {
+        padding: 0;
+    }
+    &_title {
+        margin-bottom: 25/1920*100vw;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        font-style: normal;
+        font-family: 'Open Sans';
+        font-size: 40/1920*100vw;
+        line-height: 136%;
+        font-weight: 800;
+        color: #FFFFFF;
+        @media(max-width: $width_adaptive) {
+            margin-bottom: 15/375*100vw;
+            font-size: 14/375*100vw;
+        }
+    }
+    &_block {
+        margin-bottom: 50/1920*100vw;
+        padding-right: 1vw;
+        @media(max-width: $width_adaptive) {
+            margin-bottom: 28/375*100vw;
+        }
+    }
+    &_item {
+        @include makeitflex(row, flex-start);
+        align-items: center;
+        margin-bottom: 10/1920*100vw;
+        @media(max-width: $width_adaptive) {
+            margin-bottom: 10/375*100vw;
+        }
+    }
+    &_text {
+        letter-spacing: 0.09em;
+        font-style: normal;
+        font-family: Rubik;
+        font-size: 18/1920*100vw;
+        line-height: 136%;
+        font-weight: normal;
+        color: #FFFFFF;
+        @media(max-width: $width_adaptive) {
+            font-size: 12/375*100vw;
+        }
+    }
+    &_icon {
+        margin-right: 10px;
+        height: 36/1920*100vw;
+        width: 36/1920*100vw;
+        @media(max-width: $width_adaptive) {
+            height: 16/375*100vw;
+            width: 16/375*100vw;
+        }
+    }
+    &_ukraine,
+    &_other {
+        margin-bottom: 45/1920*100vw;
+        width: 880/1920*100vw;
+        @media(max-width: $width_adaptive) {
+            width: 100%;
+        }
+    }
+    &_other,
+    &_russia {
+        @include makeitflex(row, space-between);
+        flex-wrap: wrap;
+        .contacts_block2_block {
+            width: 50%;
+            @media(max-width: $width_adaptive) {
+                width: 100%;
+            }
+        }
+    }
+    &_russia {
+        position: relative;
+        width: 100%;
+        &>svg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 14vw;
+            width: 14/310*292vw;
+            @media(max-width: $width_adaptive) {
+                height: 224/2/375*100vw;
+                width: 224/2/375*100vw;
+            }
+        }
+    }
+    &_ukraine,
+    &_other,
+    &_russia {
+        border-radius: 50px;
+        background: linear-gradient(180deg, rgba(54, 53, 53, 0.4) 0%, rgba(31, 32, 36, 0.4) 100%);
+        padding: 32/1920*100vw 40/1920*100vw;
+        @media(max-width: $width_adaptive) {
+            padding: 20/375*100vw;
+        }
+    }
+}
